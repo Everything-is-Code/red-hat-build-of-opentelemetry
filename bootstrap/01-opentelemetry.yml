@@ -5,13 +5,11 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    name: ''
-    namespace: openshift-gitops
     server: 'https://kubernetes.default.svc'
   source:
     path: resources
     repoURL: 'https://github.com/Everything-is-Code/red-hat-build-of-opentelemetry.git'
-    targetRevision: HEAD
+    targetRevision: main
   project: opentelemetry
   syncPolicy:
     automated:
